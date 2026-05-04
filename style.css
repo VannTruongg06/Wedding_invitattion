@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    overflow: hidden;
+}
+
+.album-container {
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    /* Chiều cao động cho mobile */
+}
+
+.photo-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* SỬA LỖI HIỂN THỊ ẢNH TẠI ĐÂY */
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.bg-image img {
+    width: 100%;
+    height: 100%;
+    /* Object-fit giúp ảnh phủ kín mà không bị méo tỷ lệ */
+    object-fit: cover;
+    /* Căn giữa ảnh để không bị lệch mặt */
+    object-position: center;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Tạo hiệu ứng mờ tối ở đầu và cuối để nổi bật chữ */
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.4) 0%,
+            transparent 30%,
+            transparent 70%,
+            rgba(0, 0, 0, 0.7) 100%);
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Tăng padding để chữ không bị sát mép màn hình điện thoại */
+    padding: 15vh 0 8vh 0;
+    text-align: center;
+}
+
+.main-title {
+    color: #f1d56e;
+}
+
+.script-font {
+    font-family: 'Great Vibes', cursive;
+    /* Dùng vw để font tự co giãn theo độ rộng màn hình */
+    font-size: clamp(3.5rem, 15vw, 5rem);
+    line-height: 0.9;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+}
+
+.footer-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    color: #f1d56e;
+    font-family: 'Playfair Display', serif;
+}
+
+.couple-name span {
+    display: block;
+    font-size: 0.7rem;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.couple-name h2 {
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    letter-spacing: 1px;
+}
+
+.date p {
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+    letter-spacing: 2px;
+    border-top: 1px solid rgba(241, 213, 110, 0.5);
+    padding-top: 10px;
+}
