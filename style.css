@@ -116,3 +116,135 @@ body {
     border-top: 1px solid rgba(241, 213, 110, 0.5);
     padding-top: 10px;
 }
+
+/* --- PHẦN VIẾT THÊM CHO CÁC TRANG SAU --- */
+
+/* Kích hoạt lướt hít trang cho container (Cần thêm vào class có sẵn) */
+.album-container {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Ẩn thanh cuộn cho Firefox */
+}
+
+.album-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ẩn cho Chrome/Safari */
+
+.photo-card {
+    scroll-snap-align: start;
+    /* Giúp hít trang khi lướt */
+}
+
+/* Kiểu cho trang nền trắng */
+.page-white {
+    background-color: #fff;
+    color: #333;
+}
+
+.page-white .content-wrapper {
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Trang Gia Đình */
+.quote {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.family-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.family-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.side-title {
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.avatar-frame {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px 0;
+    border: 2px solid #f1d56e;
+}
+
+.avatar-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.label {
+    background: #fdf2e9;
+    padding: 2px 10px;
+    font-size: 0.6rem;
+    border-radius: 10px;
+}
+
+.name-script-gold {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2rem;
+    color: #d4a373;
+    margin-top: 5px;
+}
+
+/* Trang Lịch */
+.calendar-box {
+    border: 1px solid #d4a373;
+    padding: 20px 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.day-number {
+    font-size: 3rem;
+    color: #d4a373;
+    font-weight: bold;
+    padding: 0 15px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.date-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Trang Album */
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
