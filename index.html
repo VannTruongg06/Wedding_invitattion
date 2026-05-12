@@ -9,23 +9,19 @@
 </head>
 
 <body>
-    <!-- Container chính để hỗ trợ cuộn sau này -->
     <main class="album-container">
 
         <!-- Trang bìa -->
         <section class="photo-card cover-page">
             <div class="overlay"></div>
-            <!-- Sử dụng class để định dạng ảnh nền trong CSS -->
             <div class="bg-image">
                 <img src="./img/BG1.jpg" alt="Cover Image">
             </div>
-
             <div class="content-wrapper">
                 <div class="main-title">
                     <h1 class="script-font">Ngày</h1>
                     <h1 class="script-font">Chung Đôi</h1>
                 </div>
-
                 <div class="footer-info">
                     <div class="couple-name">
                         <span>Cô Dâu</span>
@@ -41,27 +37,28 @@
                 </div>
             </div>
         </section>
-        <!-- Các trang ảnh khác -->
+
+        <!-- Trang Thông Tin Gia Đình -->
         <section class="photo-card page-white family-section">
             <div class="content-wrapper family-page">
                 <p class="quote">"Hôn nhân là chuyện cả đời<br>Yêu người vừa ý, cưới người mình thương"</p>
                 <div class="family-grid">
                     <div class="family-item">
                         <p class="side-title">NHÀ TRAI</p>
-                        <p>Ông: Nguyễn Văn A</p>
-                        <p>Bà: Trần Thị B</p>
+                        <p>Ông: Trần Chất</p>
+                        <p>Bà: Dương Thị Phương</p>
                         <div class="avatar-frame">
-                            <img src="https://picsum.photos/200" alt="Groom">
+                            <img src="./img/DT.jpg" alt="Groom">
                         </div>
                         <span class="label">CHÚ RỂ</span>
                         <h3 class="name-script-gold">Đức Trí</h3>
                     </div>
                     <div class="family-item">
                         <p class="side-title">NHÀ GÁI</p>
-                        <p>Ông: Lê Văn C</p>
-                        <p>Bà: Phạm Thị D</p>
+                        <p>Ông: Nguyễn Văn Chính</p>
+                        <p>Bà: Đặng Thị Thúy</p>
                         <div class="avatar-frame">
-                            <img src="https://picsum.photos/201" alt="Bride">
+                            <img src="./img/HT.jpg" alt="Bride">
                         </div>
                         <span class="label">CÔ DÂU</span>
                         <h3 class="name-script-gold">Huyền Trang</h3>
@@ -70,38 +67,109 @@
             </div>
         </section>
 
-        <section class="photo-card page-white calendar-section">
-            <div class="content-wrapper calendar-page">
-                <p class="invite-text">TRÂN TRỌNG KÍNH MỜI TỚI DỰ<br>BỮA CƠM THÂN MẬT MỪNG CƯỚI CỦA</p>
-                <h2 class="names-display">Đức Trí ❤️ Huyền Trang</h2>
-                <div class="calendar-box">
-                    <p class="box-title">TIỆC CƯỚI TỔ CHỨC VÀO LÚC</p>
-                    <p class="time-main">17:00 - CHỦ NHẬT</p>
-                    <div class="date-row">
-                        <span>THÁNG 06</span>
-                        <div class="day-number">10</div>
-                        <span>NĂM 2026</span>
+        <!-- Trang Thiệp Mời Chi Tiết -->
+        <section class="photo-card page-white invitation-detail">
+            <div class="content-wrapper invitation-box">
+                <div class="logo-wedding">
+                    <h1 class="logo-font">TT</h1>
+                </div>
+                <div class="invitation-text">
+                    <p class="trantrong">TRÂN TRỌNG KÍNH MỜI</p>
+                    <h2 class="guest-font">Quý Khách</h2>
+                    <p class="desc">ĐẾN DỰ BUỔI TIỆC THÂN MẬT CÙNG GIA ĐÌNH CHÚNG TÔI TẠI</p>
+
+                    <div class="address-box">
+                        <h3 class="location-title">TƯ GIA NHÀ GÁI</h3>
+                        <p>THÔN THANH XUÂN - XÃ ĐĂK UI - QUẢNG NGÃI</p>
                     </div>
-                    <p class="lunar-date">TỨC NGÀY 25 THÁNG 04 NĂM BÍNH NGỌ</p>
+
+                    <div class="time-box">
+                        <p>Vào thứ 4, lúc 11 giờ 00</p>
+                        <div class="date-display">
+                            10 | 06 | 2026
+                        </div>
+                        <p class="lunar-text">( Tức ngày 25 tháng 04 năm Bính Ngọ )</p>
+                    </div>
+                    <a href="https://www.facebook.com/angthihuyentrang.721384?mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="wish-button">
+                        Gửi lời chúc phúc
+                    </a>
                 </div>
             </div>
         </section>
 
+        <!-- Trang Album -->
         <section class="photo-card page-white album-section">
             <div class="content-wrapper album-page">
-                <h2 class="name-script-gold">Album ảnh cưới</h2>
+                <h2 class="name-script-gold" style="margin-bottom: 20px;">Album ảnh cưới</h2>
                 <div class="photo-grid">
-                    <img src="image_47f847.jpg" alt="1">
-                    <img src="image_47f82a.jpg" alt="2">
-                    <img src="image_47f825.jpg" alt="3">
-                    <img src="image_47f808.jpg" alt="4">
-                    <img src="image_47f803.jpg" alt="5">
-                    <img src="image_4942c0.jpg" alt="6">
+                    <div class="photo-item tall">
+                        <img src="./img/album1.jpg" alt="1">
+                    </div>
+                    <div class="photo-item">
+                        <img src="./img/album2.jpg" alt="2">
+                    </div>
+                    <div class="photo-item">
+                        <img src="./img/album3.jpg" alt="3">
+                    </div>
+                    <div class="photo-item wide">
+                        <img src="./img/album4.jpg" alt="4">
+                    </div>
+                    <div class="photo-item">
+                        <img src="./img/album5.jpg" alt="5">
+                    </div>
+                    <div class="photo-item">
+                        <img src="./img/album6.jpg" alt="6">
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Trang Địa Chỉ/QR -->
+        <section class="photo-card page-white">
+            <div class="content-wrapper">
+                <h2 class="location-title" style="margin-bottom: 20px; font-size: 1.5rem;">Địa chỉ tổ chức tiệc</h2>
+                <div style="width: 80%; margin: 0 auto; margin-bottom: 20px;">
+                    <img src="./img/qr.jpg" alt="QR"
+                        style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                </div>
+                <a href="https://maps.app.goo.gl/md64kJS1ftozWRiM7?g_st=ic" target="_blank" class="maps-button">
+                    Xem vị trí trên Google Maps
+                </a>
             </div>
         </section>
 
     </main>
+
+    <!-- Lightbox để xem ảnh to -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.close-lightbox');
+
+        // Tìm tất cả ảnh trong album để gán sự kiện click
+        document.querySelectorAll('.photo-item img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+            });
+        });
+
+        // Đóng lightbox khi click vào nút X hoặc ra ngoài ảnh
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 
 </html>
